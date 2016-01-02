@@ -94,7 +94,7 @@
 							{{/each}}
 						</ul>
 						{{/if}}
-					<div>
+					</div>
 				</div>
 				{{/each}}
 			</section>
@@ -220,6 +220,13 @@
 		</article>
 
 		<aside class="sidebar">
+
+			{{#if resume.basics.summary}}
+			<section class="skills">
+				<h2>Profile</h2>
+				<p>{{resume.basics.summary}}</p>
+			</section>
+			{{/if}}
 
 			{{#if resume.skills.length}}
 			<section class="skills">

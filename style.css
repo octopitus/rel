@@ -52,7 +52,7 @@ list-style-type: circle;
   display: flex;
   margin: 0 auto;
   flex-flow: wrap row;
-  max-width:940px;
+  max-width: 840px;
 }
 
 .container h1, .container h2 {
@@ -64,8 +64,8 @@ list-style-type: circle;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: 3em;
+	margin-bottom: 4em;
 }
 
 .container > header > .basic {
@@ -119,6 +119,7 @@ list-style-type: circle;
 .main > section > .item {
 	display: flex;
 	flex-flow: wrap row;
+	margin-bottom: 1em;
 }
 
 .item > .date {
