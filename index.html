@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+	<title>Tran Nguyen Thai Luy</title>
+
+	<style>
+	/*reset.css*/
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+/* apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*google fonts*/
+@font-face {
+  font-family: 'Six Caps';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Six Caps'), local('SixCaps'), url(https://themes.googleusercontent.com/static/fonts/sixcaps/v4/tMrhQDUBAHnnGuM33-yobPesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
+}
+
+body {
+	background-color: #fff;
+  font: 16px/26px 'Source Sans Pro', Arial, sans-serif;
+  margin: 1em 0;
+}
+
+.readable {
+	font-size: 0.93em;
+	color: #333;
+}
+
+.inline-list {
+list-style-type: circle;
+
+	width: 50%;
+}
+
+.inline-list > li {
+	margin-left: 26px;
+	float: left;
+	width: auto;
+	/*display: inline;*/
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  flex-flow: wrap row;
+  max-width:940px;
+}
+
+.container h1, .container h2 {
+	font-family: 'Six Caps', Arial, sans-serif;
+}
+
+.container > header {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.container > header > .basic {
+	flex: 5 1;
+}
+
+
+.container > header > .basic h1 {
+	font-size: 4em;
+	line-height: 1em;
+}
+
+.container > header > .basic h2 {
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	font-size: 1.25em;
+	margin-top: 0.25em;
+}
+
+.container > header > .contact {
+	flex: 5 1;
+	text-align: right;
+	/*pad: 0.75em 0;*/
+	/*width: 50%;*/
+}
+
+.main {
+	padding-right: 1.5em;
+	width: 70%;
+}
+
+.sidebar {
+	width: 30%;
+}
+
+.main > section, .sidebar section {
+	margin-bottom: 0.433em;
+}
+
+.main > section > h2, .sidebar > section > h2 {
+	padding: 0.3em 0;
+	font-size: 2.25em;
+	border-bottom: 2px solid #E9E9E9;
+	margin-bottom: 0.2083333333333333em;
+}
+
+.main > section h3, .sidebar > section h3 {
+	font-size: 0.93em;
+	font-weight: bold;
+}
+
+.main > section > .item {
+	display: flex;
+	flex-flow: wrap row;
+}
+
+.item > .date {
+	font-size: 0.93em;
+	padding-right: 1.5em;
+	text-align: right;
+	flex: 2 1;
+}
+
+.item > .summary {
+	flex: 8 1;
+}
+
+.name {
+	text-transform: uppercase;
+}
+
+.position {
+	font-style: italic;
+	color: #666;
+	margin-bottom: 0.34em;
+}
+
+.keywords {
+	list-style-type: circle;
+}
+
+.keywords > li {
+	margin-left: 1em;
+}
+	</style>
+
+	</head>
+	<body>
+
+	<div class="container">
+
+		<header>
+			<div class="basic">
+				<h1>Tran Nguyen Thai Luy</h1>
+				<h2>Web Developer</h2>
+			</div>
+			<ul class="contact inline-list readable">
+				<li class="email">
+					richard.hendriks@mail.com
+				</li>
+				<li class="phone">
+					(912) 555-4321
+				</li>
+				<li class="address">
+					Build an algorithm for artist to detect if their
+				</li>
+			</ul>
+		</header>
+
+		<article class="main">
+			<section class="work">
+				<h2>Work Experience</h2>
+				<div class="item">
+					<div class="date">
+						<span class="startDate">
+							2013-12-01
+						</span>
+						<span class="endDate">
+							- 2014-12-01
+						</span>
+					</div>
+					<div class="summary">
+						<div class="info">
+							<h3 class="name">
+								Pied Piper
+							</h3>
+							<div class="position">
+								CEO/President
+							</div>
+						</div>
+							<p class="readable">Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+						<ul class="highlights">
+							<li class="readable">Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
+							<li class="readable">Successfully won Techcrunch Disrupt</li>
+							<li class="readable">Optimized an algorithm that holds the current world record for Weisman Scores</li>
+						</ul>
+					<div>
+				</div>
+			</section>
+
+			<section class="education">
+				<h2>Education</h2>
+				<div class="item">
+					<div class="date">
+						<span class="startDate">
+							2011-06-01
+						</span>
+						<span class="endDate">
+							- 2014-01-01
+						</span>
+					</div>
+					<div class="summary">
+						<h3 class="name">University of Oklahoma</h3>
+						<div class="position">
+							Information Technology
+						</div>
+				</div>
+			</section>
+
+
+		</article>
+
+		<aside class="sidebar">
+
+			<section class="skills">
+				<h2>Skills</h2>
+				<div class="item">
+					<div class="name">
+						Programming Languages: 
+					</div>
+					<ul class="keywords">
+						<li>Javascript</li>
+						<li>HTML5/CSS3</li>
+						<li>PHP</li>
+					</ul>
+				</div>
+			</section>
+
+
+			<section class="interests">
+				<h2>Interests</h2>
+				<div class="item">
+					<ul class="keywords">
+						<li>Ferrets</li>
+						<li>Unicorns</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="references">
+				<h2>References</h2>
+				<div class="item">
+					<blockquote class="reference">
+						It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.
+					</blockquote>
+					<div class="name">
+						— Erlich Bachman
+					</div>
+				</div>
+			</section>
+		</aside>
+
+	</div>
+
+	</body>
+</html>
