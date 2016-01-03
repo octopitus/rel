@@ -225,7 +225,7 @@
 			{{#if resume.basics.summary}}
 			<section class="profile">
 				<h2>Personal summary</h2>
-				<p>{{resume.basics.summary}}</p>
+				<p class="readable">{{resume.basics.summary}}</p>
 			</section>
 			{{/if}}
 
@@ -263,7 +263,7 @@
 					{{#if keywords.length}}
 					<div class="keywords">
 						{{#each keywords}}
-						<span>{{.}}</span>
+						<span class="readable">{{.}}</span>
 						{{/each}}
 					</div>
 					{{/if}}
@@ -285,7 +285,7 @@
 					{{#if keywords.length}}
 					<ul class="keywords">
 						{{#each keywords}}
-						<li>{{.}}</li>
+						<li class="readable">{{.}}</li>
 						{{/each}}
 					</ul>
 					{{/if}}
