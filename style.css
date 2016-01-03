@@ -93,11 +93,11 @@ list-style-type: circle;
 
 .main {
 	padding-right: 1.5em;
-	width: 60%;
+	width: 66%;
 }
 
 .sidebar {
-	width: 40%;
+	width: 34%;
 }
 
 .main > section, .sidebar section {
@@ -158,6 +158,14 @@ list-style-type: circle;
 
 .keywords > span:not(:last-child):after {
 	content: ', ';
+}
+
+.skills > .item > .name {
+	font-weight: bold;
+}
+
+.skills > .item {
+	margin-bottom: 0!important;
 }
 
 .references > .item {
