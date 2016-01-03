@@ -35,7 +35,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body {
 	background-color: #fff;
-  font: 16px/26px 'Source Sans Pro', Arial, sans-serif;
+  font: 1em/1.5em 'Source Sans Pro', Arial, sans-serif;
   margin: 1em 0;
 }
 
@@ -45,9 +45,7 @@ body {
 }
 
 .inline-list {
-list-style-type: circle;
-
-	width: 50%;
+	list-style-type: circle;
 }
 
 .inline-list > li {
@@ -70,12 +68,12 @@ list-style-type: circle;
 }
 
 .container > header {
-	flex: 0 0 auto;
+	flex: 0 0 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-top: 3em;
-	margin-bottom: 4em;
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
 
 .container > header > .basic {
@@ -96,18 +94,18 @@ list-style-type: circle;
 
 .container > header > .contact {
 	flex: 5 1;
-	text-align: right;
+	text-align: left;
 	/*pad: 0.75em 0;*/
 	/*width: 50%;*/
 }
 
 .main {
 	padding-right: 1.5em;
-	width: 66%;
+	width: 65%;
 }
 
 .sidebar {
-	width: 34%;
+	width: 35%;
 }
 
 .main > section, .sidebar section {
@@ -134,7 +132,7 @@ list-style-type: circle;
 }
 
 .item > .date {
-	font-size: 0.93em;
+	font-size: 0.8em;
 	padding-right: 1.5em;
 	text-align: right;
 	flex: 3 1;
@@ -159,7 +157,7 @@ list-style-type: circle;
 }
 
 .highlights:not(.inline-list) > li {
-	margin-left: 1em;
+	margin-left: 1.18em;
 }
 
 .keywords > span {
@@ -168,10 +166,6 @@ list-style-type: circle;
 
 .keywords > span:not(:last-child):after {
 	content: ', ';
-}
-
-.skills > .item > .name {
-	font-weight: bold;
 }
 
 .skills > .item {
@@ -204,38 +198,15 @@ list-style-type: circle;
 				<li class="address">
 					60/666 - 3/2 Street, Ward 14, District 10, HCM City
 				</li>
+				<li class="website">
+					http://github.com/octopitus
+				</li>
 			</ul>
 		</header>
 
 		<article class="main">
 			<section class="work">
 				<h2>Work Experience</h2>
-				<div class="item">
-					<div class="date">
-						<span class="startDate">
-							Feb 2014
-						</span>
-						<span class="endDate">
-							- Feb 2015
-						</span>
-					</div>
-					<div class="summary">
-						<div class="info">
-							<h3 class="name">
-								studyphim.vn
-							</h3>
-							<div class="position">
-								Founder / Developer
-							</div>
-						</div>
-							<p class="readable">STUDYPHIM.VN in the most fun way to learn English through movies.</p>
-						<ul class="highlights">
-							<li class="readable">Developed a movies management system, allow users to watch movies with dual subtitles.</li>
-							<li class="readable">Developed and maintained both frontend and backend functionalities.</li>
-							<li class="readable">Monitor website and its performance.</li>
-						</ul>
-					</div>
-				</div>
 				<div class="item">
 					<div class="date">
 						<span class="startDate">
@@ -256,9 +227,35 @@ list-style-type: circle;
 						</div>
 							<p class="readable">Liti Solutions is a tech start-up company providing solutions for Business and Start-up.</p>
 						<ul class="highlights">
-							<li class="readable">Researched on memory leaks of RethinkDB in Golang.</li>
-							<li class="readable">Researched and implemented WYSIWYM editor with collaborative and offline capabilities.</li>
-							<li class="readable">Optimized React to update DOM manually without rerender.</li>
+							<li class="readable">Transform design into HTML/CSS.</li>
+							<li class="readable">Developed realtime applications and e-commerce websites.</li>
+							<li class="readable">Developed rich text editor with collaborative and offline capabilities.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="date">
+						<span class="startDate">
+							Feb 2014
+						</span>
+						<span class="endDate">
+							- Feb 2015
+						</span>
+					</div>
+					<div class="summary">
+						<div class="info">
+							<h3 class="name">
+								studyphim.vn
+							</h3>
+							<div class="position">
+								Founder / Developer
+							</div>
+						</div>
+							<p class="readable">STUDYPHIM.VN in the most fun way to learn English through movie.</p>
+						<ul class="highlights">
+							<li class="readable">Developed a movie management system, allowing user to watch movie with dual subtitles.</li>
+							<li class="readable">Participated in discussions to come up with ideas.</li>
+							<li class="readable">Developed and maintained both frontend and backend functionalities.</li>
 						</ul>
 					</div>
 				</div>
@@ -304,8 +301,8 @@ list-style-type: circle;
 		<aside class="sidebar">
 
 			<section class="profile">
-				<h2>Personal summary</h2>
-				<p class="readable">A conscientious, fast learner. Ability to think through a problem coupled with strong technical skills.</p>
+				<h2>Summary</h2>
+				<p class="readable">A conscientious, fast learner. Strong problem-solving and technical skills.</p>
 			</section>
 
 
@@ -314,7 +311,7 @@ list-style-type: circle;
 				<h2>Skills</h2>
 				<div class="item">
 					<div class="name">
-						- Programming Languages: 
+						Programming Languages: 
 					</div>
 					<div class="keywords">
 						<span class="readable">Javascript</span>
@@ -325,7 +322,7 @@ list-style-type: circle;
 				</div>
 				<div class="item">
 					<div class="name">
-						- Frameworks: 
+						Frameworks: 
 					</div>
 					<div class="keywords">
 						<span class="readable">Laravel</span>
@@ -337,11 +334,11 @@ list-style-type: circle;
 			<section class="interests">
 				<h2>Interests</h2>
 				<div class="item">
-					<ul class="keywords">
-						<li class="readable">Bicycling</li>
-						<li class="readable">Open Source</li>
-						<li class="readable">E-Sport</li>
-					</ul>
+					<div class="keywords">
+						<span class="readable">Cycling</span>
+						<span class="readable">Open Source</span>
+						<span class="readable">E-Sport</span>
+					</div>
 				</div>
 			</section>
 

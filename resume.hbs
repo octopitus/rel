@@ -35,14 +35,14 @@
 					{{resume.contact.phone}}
 				</li>
 				{{/if}}
-				{{#if resume.contact.website}}
-				<li class="website">
-					{{resume.contact.website}}
-				</li>
-				{{/if}}
 				{{#if resume.contact.address}}
 				<li class="address">
 					{{resume.contact.address}}
+				</li>
+				{{/if}}
+				{{#if resume.contact.website}}
+				<li class="website">
+					{{resume.contact.website}}
 				</li>
 				{{/if}}
 			</ul>
@@ -224,7 +224,7 @@
 
 			{{#if resume.basics.summary}}
 			<section class="profile">
-				<h2>Personal summary</h2>
+				<h2>Summary</h2>
 				<p class="readable">{{resume.basics.summary}}</p>
 			</section>
 			{{/if}}
@@ -257,7 +257,7 @@
 				<div class="item">
 					{{#if name}}
 					<div class="name">
-						- {{name}}
+						{{name}}
 					</div>
 					{{/if}}
 					{{#if keywords.length}}
@@ -283,11 +283,11 @@
 					</div>
 					{{/if}}
 					{{#if keywords.length}}
-					<ul class="keywords">
+					<div class="keywords">
 						{{#each keywords}}
-						<li class="readable">{{.}}</li>
+						<span class="readable">{{.}}</span>
 						{{/each}}
-					</ul>
+					</div>
 					{{/if}}
 				</div>
 				{{/each}}
