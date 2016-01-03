@@ -303,9 +303,13 @@
 					<h3 class="name">
 						{{name}}
 					</h3>
+					{{/if}}
+					{{#if email}}
 					<div class="email">
 						<a href="mainto:{{email}}">{{email}}</a>
 					</div>
+					{{/if}}
+					{{#if position}}
 					<div class="position">
 						{{position}}
 					</div>
