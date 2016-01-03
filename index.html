@@ -62,7 +62,7 @@ list-style-type: circle;
   display: flex;
   margin: 0 auto;
   flex-flow: wrap row;
-  max-width: 840px;
+  max-width: 820px;
 }
 
 .container h1, .container h2 {
@@ -103,11 +103,11 @@ list-style-type: circle;
 
 .main {
 	padding-right: 1.5em;
-	width: 70%;
+	width: 60%;
 }
 
 .sidebar {
-	width: 30%;
+	width: 40%;
 }
 
 .main > section, .sidebar section {
@@ -126,17 +126,18 @@ list-style-type: circle;
 	font-weight: bold;
 }
 
-.main > section > .item {
+.main > section > .item,
+.sidebar > section > .item {
 	display: flex;
 	flex-flow: wrap row;
-	margin-bottom: 1em;
+	margin-bottom: 0.86em;
 }
 
 .item > .date {
 	font-size: 0.93em;
 	padding-right: 1.5em;
 	text-align: right;
-	flex: 2 1;
+	flex: 3 1;
 }
 
 .item > .summary {
@@ -153,12 +154,20 @@ list-style-type: circle;
 	margin-bottom: 0.34em;
 }
 
-.keywords {
+.highlights {
 	list-style-type: circle;
 }
 
-.keywords > li {
+.highlights:not(.inline-list) > li {
 	margin-left: 1em;
+}
+
+.keywords > span {
+	margin-left: 0.25em;
+}
+
+.keywords > span:not(:last-child):after {
+	content: ', ';
 }
 	</style>
 
@@ -174,13 +183,13 @@ list-style-type: circle;
 			</div>
 			<ul class="contact inline-list readable">
 				<li class="email">
-					richard.hendriks@mail.com
+					thailuy86@mail.com
 				</li>
 				<li class="phone">
-					(912) 555-4321
+					(+84)164 996 9614
 				</li>
 				<li class="address">
-					Build an algorithm for artist to detect if their
+					60/666 - 3/2 Street, Ward 14, District 10, HCM City
 				</li>
 			</ul>
 		</header>
@@ -191,51 +200,52 @@ list-style-type: circle;
 				<div class="item">
 					<div class="date">
 						<span class="startDate">
-							2013-12-01
+							Feb 2014
 						</span>
 						<span class="endDate">
-							- 2014-12-01
+							- Feb 2015
 						</span>
 					</div>
 					<div class="summary">
 						<div class="info">
 							<h3 class="name">
-								Pied Piper
+								studyphim.vn
 							</h3>
 							<div class="position">
-								CEO/President
+								Founder / Developer
 							</div>
 						</div>
-							<p class="readable">Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm.</p>
+							<p class="readable">STUDYPHIM.VN in the most fun way to learn English through movies.</p>
 						<ul class="highlights">
-							<li class="readable">Build an algorithm for artist to detect</li>
-							<li class="readable">Successfully won Techcrunch Disrupt</li>
+							<li class="readable">Developed a movies management system, allow users to watch movies with dual subtitles.</li>
+							<li class="readable">Developed and maintained both frontend and backend functionalities.</li>
+							<li class="readable">Monitor website and its performance.</li>
 						</ul>
 					</div>
 				</div>
 				<div class="item">
 					<div class="date">
 						<span class="startDate">
-							2013-12-01
+							Jun 2015
 						</span>
 						<span class="endDate">
-							- 2014-12-01
+							- Present
 						</span>
 					</div>
 					<div class="summary">
 						<div class="info">
 							<h3 class="name">
-								Pied Piper
+								Litisolutions
 							</h3>
 							<div class="position">
-								CEO/President
+								Web Developer
 							</div>
 						</div>
-							<p class="readable">Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™.</p>
+							<p class="readable">Liti Solutions is a tech start-up company providing solutions for Business and Start-up.</p>
 						<ul class="highlights">
-							<li class="readable">Build an algorithm for artist to detect</li>
-							<li class="readable">Successfully won Techcrunch Disrupt</li>
-							<li class="readable">Optimized an algorithm that holds the current world record for Weisman Scores</li>
+							<li class="readable">Researched on memory leaks of RethinkDB in Golang.</li>
+							<li class="readable">Researched and implemented WYSIWYM editor with collaborative and offline capabilities.</li>
+							<li class="readable">Optimized React to update DOM manually without rerender.</li>
 						</ul>
 					</div>
 				</div>
@@ -246,51 +256,78 @@ list-style-type: circle;
 				<div class="item">
 					<div class="date">
 						<span class="startDate">
-							2011-06-01
+							2011
 						</span>
 						<span class="endDate">
-							- 2014-01-01
+							- 2015
 						</span>
 					</div>
 					<div class="summary">
-						<h3 class="name">University of Oklahoma</h3>
+						<h3 class="name">Ho Chi Minh City University of Technology and Education</h3>
 						<div class="position">
 							Information Technology
 						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="date">
+						<span class="startDate">
+							2009
+						</span>
+						<span class="endDate">
+							- 2011
+						</span>
+					</div>
+					<div class="summary">
+						<h3 class="name">Tran Cao Van High School</h3>
+					</div>
 				</div>
 			</section>
+
 
 
 		</article>
 
 		<aside class="sidebar">
 
-			<section class="skills">
-				<h2>Profile</h2>
-				<p>lorem</p>
+			<section class="profile">
+				<h2>Personal summary</h2>
+				<p>A conscientious, fast learner. Ability to think through a problem coupled with strong technical skills.</p>
 			</section>
+
+
 
 			<section class="skills">
 				<h2>Skills</h2>
 				<div class="item">
 					<div class="name">
-						Programming Languages: 
+						- Programming Languages: 
 					</div>
-					<ul class="keywords">
-						<li>Javascript</li>
-						<li>HTML5/CSS3</li>
-						<li>PHP</li>
-					</ul>
+					<div class="keywords">
+						<span>Javascript</span>
+						<span>HTML5/CSS3</span>
+						<span>PHP</span>
+						<span>Golang</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="name">
+						- Frameworks: 
+					</div>
+					<div class="keywords">
+						<span>Laravel</span>
+						<span>React</span>
+					</div>
 				</div>
 			</section>
-
 
 			<section class="interests">
 				<h2>Interests</h2>
 				<div class="item">
 					<ul class="keywords">
-						<li>Ferrets</li>
-						<li>Unicorns</li>
+						<li>Bicycling</li>
+						<li>Open Source</li>
+						<li>E-Sport</li>
 					</ul>
 				</div>
 			</section>
@@ -298,11 +335,25 @@ list-style-type: circle;
 			<section class="references">
 				<h2>References</h2>
 				<div class="item">
-					<blockquote class="reference">
-						It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.
-					</blockquote>
-					<div class="name">
-						— Erlich Bachman
+					<h3 class="name">
+						Nguyen Mau Quang Vu
+					</h3>
+					<div class="email">
+						<a href="mainto:nguyenmauquangvu@gmail.com">nguyenmauquangvu@gmail.com</a>
+					</div>
+					<div class="position">
+						CTO LitiSolutions
+					</div>
+				</div>
+				<div class="item">
+					<h3 class="name">
+						Dang Vinh Phuc
+					</h3>
+					<div class="email">
+						<a href="mainto:vinhphuc.dang@gmail.com">vinhphuc.dang@gmail.com</a>
+					</div>
+					<div class="position">
+						CEO LitiSolutions
 					</div>
 				</div>
 			</section>

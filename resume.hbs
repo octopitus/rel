@@ -121,8 +121,8 @@
 						</span>
 						{{/if}}
 					</div>
-					{{#if institution}}
 					<div class="summary">
+						{{#if institution}}
 						<h3 class="name">{{institution}}</h3>
 						{{/if}}
 						{{#if area}}
@@ -146,8 +146,8 @@
 							<li>{{.}}</li>
 							{{/each}}
 						</ul>
+						{{/if}}
 					</div>
-					{{/if}}
 				</div>
 				{{/each}}
 			</section>
@@ -217,38 +217,18 @@
 				{{/each}}
 			</section>
 			{{/if}}
+
 		</article>
 
 		<aside class="sidebar">
 
 			{{#if resume.basics.summary}}
-			<section class="skills">
-				<h2>Profile</h2>
+			<section class="profile">
+				<h2>Personal summary</h2>
 				<p>{{resume.basics.summary}}</p>
 			</section>
 			{{/if}}
 
-			{{#if resume.skills.length}}
-			<section class="skills">
-				<h2>Skills</h2>
-				{{#each resume.skills}}
-				<div class="item">
-					{{#if name}}
-					<div class="name">
-						{{name}}
-					</div>
-					{{/if}}
-					{{#if keywords.length}}
-					<ul class="keywords">
-						{{#each keywords}}
-						<li>{{.}}</li>
-						{{/each}}
-					</ul>
-					{{/if}}
-				</div>
-				{{/each}}
-			</section>
-			{{/if}}
 
 			{{#if resume.languages.length}}
 			<section class="languages">
@@ -263,6 +243,28 @@
 					{{#if fluency}}
 					<div class="fluency">
 						<em>{{fluency}}</em>
+					</div>
+					{{/if}}
+				</div>
+				{{/each}}
+			</section>
+			{{/if}}
+
+			{{#if resume.skills.length}}
+			<section class="skills">
+				<h2>Skills</h2>
+				{{#each resume.skills}}
+				<div class="item">
+					{{#if name}}
+					<div class="name">
+						- {{name}}
+					</div>
+					{{/if}}
+					{{#if keywords.length}}
+					<div class="keywords">
+						{{#each keywords}}
+						<span>{{.}}</span>
+						{{/each}}
 					</div>
 					{{/if}}
 				</div>
@@ -297,14 +299,15 @@
 				<h2>References</h2>
 				{{#each resume.references}}
 				<div class="item">
-					{{#if reference}}
-					<blockquote class="reference">
-						{{reference}}
-					</blockquote>
-					{{/if}}
 					{{#if name}}
-					<div class="name">
-						— {{name}}
+					<h3 class="name">
+						{{name}}
+					</h3>
+					<div class="email">
+						<a href="mainto:{{email}}">{{email}}</a>
+					</div>
+					<div class="position">
+						{{position}}
 					</div>
 					{{/if}}
 				</div>
