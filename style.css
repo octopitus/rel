@@ -46,11 +46,11 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   display: flex;
   margin: 0 auto;
   flex-flow: wrap row;
-  max-width: 768px;
+  max-width: 968px;
 }
 
 .container h1, .container h2 {
@@ -123,13 +123,13 @@ body {
 
 .item > .date {
 	font-size: 0.85em;
-	padding-right: 1.5em;
 	text-align: right;
-	flex: 3 1;
+  width: 20%;
 }
 
 .item > .summary {
-	flex: 8 1;
+  flex: 8 1;
+  margin-left: 1.5em;
 }
 
 .name {
@@ -150,8 +150,13 @@ body {
 	margin-left: 1.18em;
 }
 
-.keywords > span {
-	margin-left: 0.25em;
+.keywords > span:not(:first-child) {
+  margin-left: 0.3em;
+}
+
+.keywords > span:first-child:before {
+  content: '-  ';
+  margin-right: 0.15em;
 }
 
 .keywords > span:not(:last-child):after {
