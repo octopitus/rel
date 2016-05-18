@@ -29,6 +29,18 @@ body {
   margin: 1em 0;
 }
 
+@media print {
+  body {
+    color: #000;
+    background: #fff;
+    font-size: 88%;
+  }
+
+  .readable {
+    color: #1B1B1B;
+  }
+}
+
 .readable {
 	font-size: 0.93em;
 	color: #333;
@@ -41,7 +53,7 @@ body {
 .inline-list > li {
 	margin-left: 26px;
 	float: left;
-	width: auto;
+	width: 100%;
 	/*display: inline;*/
 }
 
@@ -50,7 +62,7 @@ body {
   display: flex;
   margin: 0 auto;
   flex-flow: wrap row;
-  max-width: 968px;
+  max-width: 912px;
 }
 
 .container h1, .container h2 {
