@@ -87,12 +87,12 @@
 							{{/if}}
 						</div>
 						{{#if summary}}
-							<p class="readable">{{summary}}</p>
+							<p class="readable">{{{summary}}}</p>
 						{{/if}}
 						{{#if highlights.length}}
 						<ul class="highlights">
 							{{#each highlights}}
-							<li class="readable">{{.}}</li>
+							<li class="readable">{{{.}}}</li>
 							{{/each}}
 						</ul>
 						{{/if}}
@@ -185,41 +185,6 @@
 			</section>
 			{{/if}}
 
-			{{#if resume.publications.length}}
-			<section class="publications">
-				<h2>Publications</h2>
-				{{#each resume.publications}}
-				<div class="item">
-					{{#if name}}
-					<div class="name">
-						{{name}}
-					</div>
-					{{/if}}
-					{{#if publisher}}
-					<div class="publisher">
-						{{publisher}}
-					</div>
-					{{/if}}
-					{{#if releaseDate}}
-					<div class="releaseDate">
-						{{releaseDate}}
-					</div>
-					{{/if}}
-					{{#if website}}
-					<div class="website">
-						<a href="{{website}}">Link</a>
-					</div>
-					{{/if}}
-					{{#if summary}}
-					<div class="summary">
-						<p>{{summary}}</p>
-					</div>
-					{{/if}}
-				</div>
-				{{/each}}
-			</section>
-			{{/if}}
-
 		</article>
 
 		<aside class="sidebar">
@@ -258,15 +223,39 @@
 				{{#each resume.skills}}
 				<div class="item">
 					{{#if name}}
-					<div class="name">
+					<h3 class="name">
 						{{name}}
-					</div>
+					</h3>
 					{{/if}}
 					{{#if keywords.length}}
 					<div class="keywords">
 						{{#each keywords}}
 						<span class="readable">{{.}}</span>
 						{{/each}}
+					</div>
+					{{/if}}
+				</div>
+				{{/each}}
+			</section>
+			{{/if}}
+
+			{{#if resume.contributations.length}}
+			<section class="contributations">
+				<h2>Contributations & Publications</h2>
+				{{#each resume.contributations}}
+				<div class="item">
+					{{#if name}}
+					<h3 class="name">
+						{{#if website}}
+							<a href="{{website}}">{{name}}</a>
+						{{else}}
+							{{name}}
+						{{/if}}
+					</h3>
+					{{/if}}
+					{{#if summary}}
+					<div class="summary">
+						<p>{{summary}}</p>
 					</div>
 					{{/if}}
 				</div>
@@ -278,48 +267,13 @@
 			<section class="interests">
 				<h2>Interests</h2>
 				{{#each resume.interests}}
-				<div class="item">
-					{{#if name}}
-					<div class="name">
-						{{name}}
-					</div>
-					{{/if}}
-					{{#if keywords.length}}
-					<div class="keywords">
-						{{#each keywords}}
-						<span class="readable">{{.}}</span>
-						{{/each}}
-					</div>
-					{{/if}}
-				</div>
+					<span class="name">
+						{{.}}
+					</span>
 				{{/each}}
 			</section>
 			{{/if}}
 
-			{{#if resume.references.length}}
-			<section class="references">
-				<h2>References</h2>
-				{{#each resume.references}}
-				<div class="item">
-					{{#if name}}
-					<h3 class="name">
-						{{name}}
-					</h3>
-					{{/if}}
-					{{#if email}}
-					<div class="email">
-						<a href="mainto:{{email}}">{{email}}</a>
-					</div>
-					{{/if}}
-					{{#if position}}
-					<div class="position">
-						{{position}}
-					</div>
-					{{/if}}
-				</div>
-				{{/each}}
-			</section>
-			{{/if}}
 		</aside>
 
 	</div>
