@@ -8,7 +8,12 @@
       content="width=device-width, user-scalable=no, minimal-ui"
     />
 
-    <title>Luy Tran's resume</title>
+    <title>Tran Nguyen Thai Luy's resume</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue|Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       /*reset.css*/
@@ -143,35 +148,10 @@
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
       }
-      /*google fonts*/
-      @font-face {
-        font-family: "Six Caps";
-        font-style: normal;
-        font-weight: 400;
-        src: local("Six Caps"), local("SixCaps"),
-          url(https://themes.googleusercontent.com/static/fonts/sixcaps/v4/tMrhQDUBAHnnGuM33-yobPesZW2xOQ-xsNqO47m55DA.woff)
-            format("woff");
-      }
-      @font-face {
-        font-family: "Source Sans Pro";
-        font-style: normal;
-        font-weight: 700;
-        src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"),
-          url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff)
-            format("woff");
-      }
-      @font-face {
-        font-family: "Source Sans Pro";
-        font-style: normal;
-        font-weight: 400;
-        src: local("Source Sans Pro"), local("SourceSansPro-Regular"),
-          url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff)
-            format("woff");
-      }
 
       body {
         background-color: #fff;
-        font: 1em/1.5em "Source Sans Pro", Arial, sans-serif;
+        font: 1em/1.5em "Noto Serif", serif;
         margin: 1em 0;
       }
 
@@ -222,51 +202,44 @@
 
       .container h1,
       .container h2 {
-        font-family: "Six Caps", Arial, sans-serif;
-      }
-
-      .container h1 {
-        letter-spacing: 4px;
+        font-family: "Bebas Neue", cursive;
       }
 
       .container > header {
-        flex: 0 0 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 1em;
-        margin-bottom: 2em;
+        margin-top: 2em;
+        margin-bottom: 3em;
       }
 
       .container > header > .basic {
-        flex: 5 1;
+        flex: 1;
       }
 
       .container > header > .basic h1 {
-        font-size: 4em;
-        line-height: 1em;
+        font-size: 3.25em;
+        margin-bottom: 12px;
       }
 
       .container > header > .basic h2 {
-        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-family: "Noto Serif", serif;
         font-size: 1.25em;
         margin-top: 0.25em;
       }
 
       .container > header > .contact {
-        flex: 5 1;
+        flex: 1;
         text-align: left;
-        /*pad: 0.75em 0;*/
-        /*width: 50%;*/
       }
 
       .main {
         padding-right: 1.5em;
-        width: 65%;
+        width: 63.333%;
       }
 
       .sidebar {
-        width: 35%;
+        width: 36.667%;
       }
 
       .main > section,
@@ -276,55 +249,42 @@
 
       .main > section > h2,
       .sidebar > section > h2 {
-        padding: 0.3em 0;
-        font-size: 2.25em;
+        font-size: 1.5em;
         border-bottom: 2px solid #e9e9e9;
         margin-bottom: 0.25em;
-        letter-spacing: 0.01em;
       }
 
       .main > section:not(:first-child) > h2,
       .sidebar > section:not(:first-child) > h2 {
-        margin-top: 1em;
+        margin-top: 1.25em;
       }
 
       .main > section h3,
       .sidebar > section h3 {
-        font-size: 0.93em;
         font-weight: bold;
       }
 
-      .main > section > .item,
-      .sidebar > section > .item {
-        display: flex;
-        flex-flow: wrap row;
+      .main > section > .item {
         margin-bottom: 0.86em;
       }
 
-      .item > .date {
-        font-size: 0.85em;
-        text-align: right;
-        width: 20%;
+      .sidebar > section > .item {
+        margin-bottom: 0.25em;
+      }
+
+      .item .date::before {
+        margin: 0 3px 0 3px;
+        content: "|";
       }
 
       .item > .summary {
         flex: 8 1;
-        margin-left: 1.5em;
-      }
-
-      .name {
-        /* text-transform: uppercase; */
-      }
-
-      .interests .name:not(:last-child)::after {
-        margin-left: -2px;
-        margin-right: 4px;
-        content: ",";
+        margin-bottom: 0.25em;
       }
 
       .position {
-        font-style: italic;
         color: #666;
+        font-size: 0.85em;
         margin-bottom: 0.34em;
       }
 
@@ -350,19 +310,6 @@
         content: ", ";
       }
 
-      .skills > .item {
-        flex-direction: column !important;
-        margin-bottom: 0 !important;
-      }
-
-      .references > .item {
-        flex-direction: column !important;
-      }
-
-      .contributations > .item {
-        flex-direction: column !important;
-      }
-
       .contributations > .item > .summary {
         margin-left: 0;
       }
@@ -372,7 +319,7 @@
     <div class="container">
       <header>
         <div class="basic">
-          <h1>Luy Tran</h1>
+          <h1>Tran Nguyen Thai Luy</h1>
           <h2>Software Engineer</h2>
         </div>
         <ul class="contact inline-list readable">
@@ -394,14 +341,6 @@
         <section class="work">
           <h2>Work Experience</h2>
           <div class="item">
-            <div class="date">
-              <span class="startDate">
-                Sep 2018
-              </span>
-              <span class="endDate">
-                - Present
-              </span>
-            </div>
             <div class="summary">
               <div class="info">
                 <h3 class="name">
@@ -409,6 +348,9 @@
                 </h3>
                 <div class="position">
                   Mobile Engineer
+                  <span class="date">
+                    Sep 2018 - Present
+                  </span>
                 </div>
               </div>
               <ul class="highlights">
@@ -435,14 +377,6 @@
             </div>
           </div>
           <div class="item">
-            <div class="date">
-              <span class="startDate">
-                Apr 2017
-              </span>
-              <span class="endDate">
-                - Jul 2018
-              </span>
-            </div>
             <div class="summary">
               <div class="info">
                 <h3 class="name">
@@ -450,6 +384,9 @@
                 </h3>
                 <div class="position">
                   Mobile Engineer
+                  <span class="date">
+                    Apr 2017 - Jul 2018
+                  </span>
                 </div>
               </div>
               <p class="readable">
@@ -480,14 +417,6 @@
             </div>
           </div>
           <div class="item">
-            <div class="date">
-              <span class="startDate">
-                Jun 2016
-              </span>
-              <span class="endDate">
-                - Mar 2017
-              </span>
-            </div>
             <div class="summary">
               <div class="info">
                 <h3 class="name">
@@ -495,12 +424,19 @@
                 </h3>
                 <div class="position">
                   Full-stack Engineer
+                  <span class="date">
+                    Jun 2016 - Mar 2017
+                  </span>
                 </div>
               </div>
               <ul class="highlights">
                 <li class="readable">
+                  Collaborated with project manager, designer to discuss ideas and requirements.
+                </li>
+                <li class="readable">
                   Built an internal dashboard to collect data from main
-                  application, effectively visualized necessary metrics to BI team.
+                  application, effectively visualized necessary metrics to BI
+                  team.
                 </li>
                 <li class="readable">
                   Architected and developed a VOIP application (built with React
@@ -514,14 +450,6 @@
             </div>
           </div>
           <div class="item">
-            <div class="date">
-              <span class="startDate">
-                Jun 2015
-              </span>
-              <span class="endDate">
-                - Jun 2016
-              </span>
-            </div>
             <div class="summary">
               <div class="info">
                 <h3 class="name">
@@ -529,6 +457,9 @@
                 </h3>
                 <div class="position">
                   Full-stack Engineer
+                  <span class="date">
+                    Jun 2015 - Mar 2016
+                  </span>
                 </div>
               </div>
               <ul class="highlights">
@@ -549,14 +480,6 @@
             </div>
           </div>
           <div class="item">
-            <div class="date">
-              <span class="startDate">
-                Feb 2014
-              </span>
-              <span class="endDate">
-                - Feb 2015
-              </span>
-            </div>
             <div class="summary">
               <div class="info">
                 <h3 class="name">
@@ -564,6 +487,9 @@
                 </h3>
                 <div class="position">
                   Founder/Developer
+                  <span class="date">
+                    Feb 2014 - Feb 2015
+                  </span>
                 </div>
               </div>
               <p class="readable">
@@ -591,17 +517,9 @@
         <section class="education">
           <h2>Education</h2>
           <div class="item">
-            <div class="date">
-              <span class="startDate">
-                2011
-              </span>
-              <span class="endDate">
-                - 2015
-              </span>
-            </div>
             <div class="summary">
               <h3 class="name">
-                Ho Chi Minh City University Of Technology and Education
+                Ho Chi Minh City University Of Technology and Education (2011 - 2015)
               </h3>
               <div class="position">
                 B.Sc in Computer Science
@@ -677,7 +595,9 @@
               >
             </h3>
             <div class="summary">
-              <p>Draggable sliding up panel implemented in React Native.</p>
+              <p class="readable">
+                Draggable sliding up panel implemented in React Native.
+              </p>
             </div>
           </div>
           <div class="item">
@@ -685,22 +605,20 @@
               Speaker at Saigon Techcamp Uni (2015).
             </h3>
             <div class="summary">
-              <p>How to become a software engineer</p>
+              <p class="readable">How to become a software engineer.</p>
             </div>
           </div>
         </section>
 
         <section class="interests">
           <h2>Interests</h2>
-          <span class="name">
-            Cycling
-          </span>
-          <span class="name">
-            Photography
-          </span>
-          <span class="name">
-            Open-source
-          </span>
+          <div class="item">
+            <div class="keywords">
+              <span class="readable">Cycling</span>
+              <span class="readable">Photography</span>
+              <span class="readable">Open-source</span>
+            </div>
+          </div>
         </section>
       </aside>
     </div>
